@@ -1,0 +1,26 @@
+{
+    "name": "cyokup/laravel-sql-log",
+    "description": "laravel sql debug",
+    "keywords": [
+        "laravel",
+        "sql",
+        "debug"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cyokup\\LaravelSqlLog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cody",
+            "email": "648753004@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2|^8.0",
+        "laravel/framework": "^6.0|^7.0|^8.0|^9.0|^10.0"
+    }
+}
