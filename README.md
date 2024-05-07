@@ -5,9 +5,16 @@
 
 #### 发布配置：
 - php artisan vendor:publish --provider="Cyokup\SqlLog\SqlLogServiceProvider"
+- 全局生效:在app/Http/Kernel.php文件对应位置添加
+```angular2html
+protected $middleware = [
+   // ...
+    \Cyokup\SqlLog\HandleSqlLog::class
+];
+```
 
 #### 简介
-- 安装并且开启后，会在日志目录下生成sql.log文件，记录所有Sql语句以及执行时间。
+- 安装配置完成并且开启后，会在日志目录下生成sql.log文件，记录所有Sql语句以及执行时间。
 
 ### 其他
 - 欢迎提PR一起完善项目
