@@ -15,7 +15,7 @@ class SqlLogServiceProvider extends ServiceProvider
     {
         // 发布配置文件
         $this->publishes([
-            __DIR__ . '/config/sqllog.php' => config_path('sqllog.php'),
+            __DIR__ . '/../config/sqllog.php' => config_path('sqllog.php'),
         ]);
     }
 
